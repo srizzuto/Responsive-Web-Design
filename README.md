@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Responsive-Web-Designg
 
-> One paragraph statement about the project.
+> Project #2 of Microverse where I'll replicate a website making it responsive through different screen sizes
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,56 +10,32 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTM5 & CSS
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
 ## Authors
 
-👤 **Tanzila**
+👤 **Sebastian Rizzuto**
 
-- GitHub: [@githubhandle](https://github.com/tanzila-abedin)
-- Twitter: [@twitterhandle](https://twitter.com/TanzilaAbedin)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tanzila-abedin-331440b2/)
+- GitHub: [@srizzuto](https://github.com/srizzuto)
+- Twitter: [@sbstnrzzt](https://twitter.com/sbstnrzzt)
+- LinkedIn: [Sebastian Rizzuto](https://www.linkedin.com/in/srizzuto/)
 
-👤 **Author2**
+👤 **Mwila Kaunda**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/srizzuto/Responsive-Web-Design/issues).
 
 ## Show your support
 
@@ -67,10 +43,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
+- To my coding partner who helped me through all the work
+- To my Stand Up Team who kept my morale up!
