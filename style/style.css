@@ -1,0 +1,97 @@
+/* GENERAL SETUP */
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* WRAPPERS */
+.wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* NAV */
+.nav {
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  z-index: 10;
+  position: fixed;
+}
+
+.nav-logo {
+  width: 106px;
+  height: 48px;
+  margin-left: 0;
+  background-color: black;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 66px;
+  height: 16px;
+  padding: 16px 20px;
+}
+
+.nav-icons {
+  display: flex;
+  width: 98px;
+  height: 48px;
+}
+
+.icons {
+  height: 48px;
+  width: 48px;
+  border-left: 1px solid lightgray;
+}
+
+.hamburger {
+  padding: 16px;
+}
+
+.hamburger > div {
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  margin-top: 3px;
+}
+
+.icon-search {
+  width: 16px;
+  height: 16px;
+  opacity: 0.25;
+  padding: 16px;
+}
+
+.anouncement {
+  font-size: 12px;
+  height: 60px;
+  padding: 0 6px;
+  line-height: 60px;
+  text-align: center;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  background-color: #fd3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+}
+
+/*  ***********************
+        MEDIA QUERIES
+    *********************** */
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
