@@ -1,6 +1,6 @@
 /* GENERAL SETUP */
 
-body {
+/* body {
   width: 100%;
   margin: 0;
 }
@@ -8,7 +8,7 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 header {
   position: absolute;
@@ -17,8 +17,27 @@ header {
   width: 100%;
 }
 
-footer {
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+main {
   margin-top: 64px;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.9), rgba(117, 19, 93, 0.73)), url(binoculars-looking-at-ocean.jpg);
+}
+
+.display-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0
 }
 
 /* WRAPPERS */
@@ -27,38 +46,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
-/* NAV */
-
-/* .nav {
-  width: 100%;
-  height: 48px;
-  margin: 0;
-  z-index: 10;
-  position: fixed;
-}
-
-.nav-logo {
-  width: 106px;
-  height: 48px;
-  margin-left: 0;
-  background-color: black;
-}
-
-.logo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 66px;
-  height: 16px;
-  padding: 16px 20px;
-}
-
-.nav-icons {
-  display: flex;
-  width: 98px;
-  height: 48px;
-} */
 
 .icons {
   height: 48px;
@@ -109,18 +96,6 @@ footer {
 .display-flex {
   display: flex;
 }
-
-/* body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: helvetica, arial, sans-serif;
-} */
-
-/* a
-body {
-  color: #333;
-} */
 
 .grid {
   display: grid;
@@ -278,17 +253,21 @@ li {
 }
 
 .social {
-  margin: 16px 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social li {
-  margin-right: 16px;
+  margin: 0 16px
 }
 
-.social i {
-  background: #ccc;
-  padding: 9px;
-  border-radius: 50%;
+.footer-links {
+  justify-content: center;
+}
+
+.footer-logo {
+  height: 9px;
+  display: inline;
 }
 
 .editor-picks span {
@@ -337,10 +316,10 @@ li {
   font-style: italic;
 }
 
-ul {
+/* ul {
   padding: 0;
   margin: 0;
-}
+} */
 
 .container {
   padding: 0 32px;
@@ -367,11 +346,12 @@ iframe {
   background-color: #fff;
 }
 
-.display-bottom {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background-color: #fff;
+.card-title {
+  font-weight: 700;
+}
+
+.card-icon {
+  margin-left: 8px;
 }
 
 .float-right {
@@ -411,9 +391,9 @@ img {
   position: inherit;
 }
 
-.bg-img {
+/* .bg-img {
   height: 150px;
-}
+} */
 
 a {
   text-decoration: none;
@@ -524,14 +504,14 @@ form input, form textarea, form select {
   border-bottom: 2px solid #666;
 }
 
-footer > div > ul {
+footer>div>ul {
   display: flex;
   flex-wrap: wrap;
   padding: 10px 70px;
   text-align: center;
 }
 
-footer > div > ul > li {
+footer>div>ul>li {
   padding: 5px;
   text-transform: uppercase;
 }
@@ -575,10 +555,10 @@ footer > div > ul > li {
   text-align: center;
 }
 
-ul {
+/* ul {
   text-align: center;
   margin: auto;
-}
+} */
 
 /*  ***********************
         MEDIA QUERIES
