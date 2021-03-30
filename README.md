@@ -4,7 +4,7 @@
 
 > Project #2 of Microverse where I'll replicate a website making it responsive through different screen sizes
 
-![screenshot](./app_screenshot.png)
+![screenshot](img/readme_ss.png)
 
 Additional description about the project and its features.
 
@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://srizzuto.github.io/Responsive-Web-Design/.)
 
 
 ## Authors
@@ -27,10 +27,10 @@ Additional description about the project and its features.
 
 👤 **Mwila Kaunda**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
+- GitHub: [@Mwila-Kaunda](https://github.com/mwila-kaunda)
+- Twitter: [@MwilaKaunda](https://twitter.com/MwilaKaunda) 
+- LinkedIn: [Mwila Kaunda](https://linkedin.com/Mwilakaunda) 
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
