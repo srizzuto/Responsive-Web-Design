@@ -1,4 +1,5 @@
 /* GENERAL SETUP */
+
 html, body, button, input, textarea {
   font-family: ARS Maquette, "Helvetica Neue", Arial, sans-serif;
 }
@@ -46,8 +47,11 @@ ul {
 }
 
 .standalone-logo {
-  width: 50px;
-  z-index: 999;
+  width: 80%;
+}
+
+.gap-lg {
+  column-gap: 32px;
 }
 
 /* WRAPPERS */
@@ -67,7 +71,7 @@ ul {
   padding: 16px;
 }
 
-.hamburger > div {
+.hamburger>div {
   width: 20px;
   height: 2px;
   background-color: red;
@@ -585,20 +589,20 @@ footer>div>ul>li {
   font: 13px ARS Maquette, Helvetica Neue, Arial, sans-serif;
   color: #aaa;
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   background-color: black;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
-.footer-about > span {
-  display: block;
-  box-sizing: border-box;
+.footer-about span {
+  display: inline-block;
+  /* box-sizing: border-box;
   width: 100%;
-  height: 19px;
+  height: 19px; */
 }
 
-.footer-about > span > a>img {
+.footer-about>span>a>img {
   height: 9px;
 }
 
@@ -644,7 +648,7 @@ footer>div>ul>li {
   overflow: hidden;
 }
 
-.pad-left > h4 {
+.pad-left>h4 {
   margin: 0;
   margin-block-end: 0;
   margin-block-start: 0;
@@ -660,6 +664,10 @@ footer>div>ul>li {
 }
 
 .show-md {
+  display: none;
+}
+
+.hide-sm {
   display: none;
 }
 
@@ -687,11 +695,11 @@ footer>div>ul>li {
   margin-bottom: 24px;
 }
 
-.header-container > h1 {
+.header-container>h1 {
   font: bold 28px 'Yanone Kaffeesatz', sans-serif;
 }
 
-.header-container > ul > li {
+.header-container>ul>li {
   margin-top: 11px;
 }
 
@@ -702,10 +710,11 @@ footer>div>ul>li {
   color: rgb(141, 141, 141);
 }
 
-.bottom-caption > a > span {
+.bottom-caption>a>span {
   color: rgb(190, 190, 190);
   font: 12px 'Lexend', sans-serif;
 }
+
 /*  ***********************
         MEDIA QUERIES
     *********************** */
@@ -716,6 +725,11 @@ footer>div>ul>li {
   }
   .col-70x30-md {
     grid-template-columns: 70% 30%;
+  }
+  .col-3-md {
+    grid-template-columns: auto auto auto;
+    column-gap: 16px;
+    row-gap: 16px;
   }
   .show-md {
     display: block;
@@ -732,4 +746,20 @@ footer>div>ul>li {
   }
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .show-lg {
+    display: block;
+  }
+  .col-4-lg {
+    grid-template-columns: auto auto auto auto;
+    column-gap: 16px;
+  }
+
+  .col-70x30-lg {
+    grid-template-columns: 70% 30%;
+  }
+
+  .bg-img {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, .48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+  }
+}
