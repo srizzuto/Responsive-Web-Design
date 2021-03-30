@@ -65,7 +65,7 @@ ul {
   padding: 16px;
 }
 
-.hamburger>div {
+.hamburger > div {
   width: 20px;
   height: 2px;
   background-color: red;
@@ -351,7 +351,7 @@ a {
   text-decoration: none;
 }
 
-.footer-info>a {
+.footer-info > a {
   color: #aaa;
   margin: 0 2px;
 }
@@ -407,7 +407,7 @@ footer h3 {
   font-weight: 700;
 }
 
-footer>div>ul>li {
+footer > div > ul > li {
   padding: 5px;
 }
 
@@ -423,7 +423,8 @@ footer>div>ul>li {
   white-space: nowrap;
 }
 
-.space li, .post-header * {
+.space li,
+.post-header * {
   padding: 0 16px;
 }
 
@@ -443,7 +444,7 @@ footer>div>ul>li {
   justify-content: center;
 }
 
-.footer-social>ul {
+.footer-social > ul {
   display: flex;
   flex-wrap: wrap;
   padding-inline-start: 0;
@@ -453,7 +454,7 @@ footer>div>ul>li {
   justify-content: center;
 }
 
-.footer-social>ul>li {
+.footer-social > ul > li {
   margin: 3px;
 }
 
@@ -493,7 +494,7 @@ footer>div>ul>li {
   display: inline-block;
 }
 
-.footer-about>span>a>img {
+.footer-about > span > a > img {
   height: 9px;
 }
 
@@ -539,7 +540,7 @@ footer>div>ul>li {
   overflow: hidden;
 }
 
-.pad-left>h4 {
+.pad-left > h4 {
   margin: 0;
   margin-block-end: 0;
   margin-block-start: 0;
@@ -586,11 +587,11 @@ footer>div>ul>li {
   margin-bottom: 24px;
 }
 
-.header-container>h1 {
+.header-container > h1 {
   font: bold 28px 'Yanone Kaffeesatz', sans-serif;
 }
 
-.header-container>ul>li {
+.header-container > ul > li {
   margin-top: 11px;
 }
 
@@ -601,7 +602,7 @@ footer>div>ul>li {
   color: rgb(141, 141, 141);
 }
 
-.bottom-caption>a>span {
+.bottom-caption > a > span {
   color: rgb(190, 190, 190);
   font: 12px 'Lexend', sans-serif;
 }
@@ -637,43 +638,54 @@ footer>div>ul>li {
     margin-bottom: 15px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
   .separator {
     display: inline;
     padding: 0 3px;
   }
+
   .flex-md {
     display: flex;
   }
+
   .col-30x70 {
     grid-template-columns: 70% 30%;
   }
+
   .col-70x30-md {
     grid-template-columns: 70% 30%;
   }
+
   .col-3-md {
     grid-template-columns: auto auto auto;
     column-gap: 16px;
     row-gap: 16px;
   }
+
   .show-md {
     display: block;
   }
+
   .hide-md {
     display: none;
   }
+
   .header-clearance {
     margin-top: 112px;
   }
+
   .standalone {
     margin: 0;
     height: 378px;
   }
+
   .card-title {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 15px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
   .card-title2 {
     font-weight: 700;
     font-size: 20px;
@@ -686,29 +698,36 @@ footer>div>ul>li {
   .col-fund-list {
     grid-template-columns: 70% 30%;
   }
+
   .show-lg {
     display: block;
   }
+
   .col-4-lg {
     grid-template-columns: auto auto auto auto;
     column-gap: 16px;
   }
+
   .col-70x30-lg {
     grid-template-columns: 70% 30%;
   }
+
   .bg-img {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
+
   .card-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
   }
+
   .card-title2 {
     font-weight: 700;
     line-height: 25px;
     font-size: 28px;
   }
+
   .main-article-date {
     color: white;
   }
