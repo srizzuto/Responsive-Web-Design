@@ -1,20 +1,15 @@
 /* GENERAL SETUP */
 
-/* body {
-  width: 100%;
-  margin: 0;
+html, body, button, input, textarea {
+  font-family: ARS Maquette, "Helvetica Neue", Arial, sans-serif;
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-} */
-
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 ul {
@@ -22,22 +17,38 @@ ul {
   margin: 0;
 }
 
-main {
-  margin-top: 64px;
+.nav-links li i {
+  padding: 0 16px;
+}
+
+.header-clearance {
+  margin-top: 80px;
 }
 
 .bg-img {
+  margin: 0 10px 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 150px;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.9), rgba(117, 19, 93, 0.73)), url(binoculars-looking-at-ocean.jpg);
+  height: 184px;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+}
+
+.display-top {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .display-bottom {
   position: absolute;
   left: 0;
   bottom: 0
+}
+
+.standalone-logo {
+  width: 50px;
+  z-index: 999;
 }
 
 /* WRAPPERS */
@@ -90,7 +101,11 @@ main {
 }
 
 .item-height {
-  height: 64px;
+  height: 48px;
+}
+
+.item-32 {
+  height: 32px;
 }
 
 .display-flex {
@@ -250,24 +265,13 @@ main {
 
 li {
   list-style: none;
+  margin: 0;
 }
 
 .social {
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.social li {
-  margin: 0 16px
-}
-
-.footer-links {
-  justify-content: center;
-}
-
-.footer-logo {
-  height: 9px;
-  display: inline;
+  width: 100%;
 }
 
 .editor-picks span {
@@ -359,7 +363,7 @@ iframe {
 }
 
 .clearance {
-  margin-top: 86px;
+  margin-top: 80px;
 }
 
 aside {
@@ -368,10 +372,6 @@ aside {
 
 .h60 {
   height: 90px;
-}
-
-img {
-  width: 100%;
 }
 
 .editor-img {
@@ -504,39 +504,141 @@ form input, form textarea, form select {
   border-bottom: 2px solid #666;
 }
 
-footer>div>ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px 70px;
-  text-align: center;
-}
-
 footer>div>ul>li {
   padding: 5px;
+}
+
+.footer-links {
+  padding: 20px 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-links {
+  color: rgb(114, 114, 114);
+  font-family: Shentox, sans-serif;
   text-transform: uppercase;
 }
 
-.link-f {
-  color: rgb(114, 114, 114);
-  font-family: Shentox, sans-serif;
+.post-header {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.footer-top {
+.space li, .post-header * {
+  padding: 0 16px;
+}
+
+.current {
+  color: white;
+}
+
+/* .footer-logo {
+  height: 9px;
+  display: inline-block;
+}
+
+.footer-links li {
+  color: rgb(114, 114, 114);
+  font-family: Shentox, sans-serif;
+  text-transform: uppercase;
+} */
+
+/* .footer-top {
   background-color: rgb(32, 32, 32);
-  text-align: center;
+  padding: 20px 0;
 }
 
 .footer-bottom {
-  height: 97px;
-  display: flex;
   background-color: black;
+  padding: 20px;
   color: #aaa;
+}
+
+.footer-bottom span {
+  display: inline-block;
 }
 
 .footer-wrapper {
   margin: auto;
   flex-wrap: wrap;
   text-align: center;
+} */
+
+/* FOOTER */
+
+.footer-links {
+  width: 100%;
+  height: 161px;
+  padding: 40px 0;
+  background-color: #131313;
+  margin: auto;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.footer-social>ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-bottom: 21px;
+  justify-content: center;
+}
+
+.social {
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 0 3px;
+  text-align: center;
+  background-color: #333;
+  box-sizing: border-box;
+}
+
+.footer-info {
+  font: 13px 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+.footer-info>a {
+  color: #aaa;
+  margin: 0 2px;
+}
+
+.footer-about {
+  width: 100%;
+  text-align: center;
+  height: 122px;
+  padding: 32px 0;
+  font: 13px ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  color: #aaa;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.footer-about>span {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 19px;
+}
+
+.footer-about>span>a>img {
+  height: 9px;
+}
+
+.footer-logo {
+  margin-right: 3px;
 }
 
 .icon-wrapper {
@@ -546,24 +648,65 @@ footer>div>ul>li {
 }
 
 .icon-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #aaa;
   border-radius: 50%;
-  padding: 12px;
-  margin: 0;
   width: 40px;
   height: 40px;
-  text-align: center;
 }
 
-/* ul {
-  text-align: center;
-  margin: auto;
-} */
+.z999 {
+  z-index: 999;
+}
+
+.float-left {
+  float: left;
+}
+
+.fund-icon {
+  height: 60px;
+  width: 60px;
+}
+
+.target {
+  margin: 0;
+}
+
+.pad-left {
+  line-height: 28px;
+  padding-left: 60px;
+}
+
+.show-md {
+  display: none;
+}
 
 /*  ***********************
         MEDIA QUERIES
     *********************** */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .col-30x70 {
+    grid-template-columns: 70% 30%;
+  }
+  .col-70x30-md {
+    grid-template-columns: 70% 30%;
+  }
+  .show-md {
+    display: block;
+  }
+  .hide-md {
+    display: none;
+  }
+  .header-clearance {
+    margin-top: 112px;
+  }
+  .standalone {
+    margin: 0;
+    height: 378px;
+  }
+}
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (min-width: 1024px) {}

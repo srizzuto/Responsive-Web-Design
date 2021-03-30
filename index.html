@@ -7,35 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style.css">
     <title>Perma | TNW</title>
 </head>
 
 <body>
-    <header>
+    <header class="w3-white">
+        <div class="show-md">
+            <div class="col-30x70 preheader grid w3-black">
+                <div class="item-32 display-flex flex-align-center">
+                    <ul class="display-flex space w3-text-grey">
+                        <li class="current"><a href="#">News</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">AMAs</a></li>
+                        <li><a href="#">Spaces</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="item-32 display-flex flex-align-center justify-end">
+                    <ul class="display-flex space w3-text-grey">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <nav class="grid col-30x70">
-            <div class="display-flex item-height flex-align-center justify-center w3-black">
+            <div class="display-flex item-height flex-align-center justify-center w3-black hide-md">
                 <a href="#">
                     <img class="logo" src="style/logo.svg" alt="">
                 </a>
             </div>
 
-            <div class="display-flex item-height justify-end w3-red">
+            <div class="show-md display-flex item-height flex-align-center">
+                <ul class="header-links item-height display-flex flex-align-center space">
+                    <li>
+                        <a href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-links display-flex item-height justify-end">
                 <ul class="display-flex flex-align-center">
-                    <li class="w3-border-left"><i class="fa fa-search fa-lg w3-text-grey"></i></li>
-                    <li class="w3-border-left"><i class="fa fa-bars fa-lg w3-text-orange"></i></li>
+                    <li class="w3-border-left item-height display-flex flex-align-center"><i
+                            class="fa fa-search fa-lg w3-text-grey"></i></li>
+                    <li class="hide-md w3-border-left item-height display-flex flex-align-center"><i
+                            class="fa fa-bars fa-lg w3-text-orange"></i></li>
                 </ul>
             </div>
         </nav>
+
+        <div class="item-32 post-header display-flex flex-align-center flex-no-wrap w3-yellow space ">
+            <a href="#">Connect with high-level marketing leaders. Join Boost online event →</a>
+        </div>
     </header>
 
-    <main>
-        <section class="highlights">
-            <div class="bg-img w3-display-container">
+    <main class="header-clearance">
+        <section class="highlights grid col-70x30-md">
+            <div class="bg-img w3-display-container standalone">
+                <div class="display-top z999">
+                    <img class="standalone-logo" src="style/logo.svg" alt="">
+                </div>
 
                 <div class="display-bottom w3-padding">
-                    <span class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis commodi laboriosam qui ad.</span>
-                    <div class="display-flex">
+                    <span class="card-title w3-text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus reiciendis commodi laboriosam qui ad.</span>
+                    <div class="display-flex w3-text-grey">
                         <div>
                             <span>by Ivan Mehta</span>
                         </div>
@@ -49,23 +105,243 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="">
+                <div class="bg-img w3-display-container">
+                    <div class="display-bottom w3-padding">
+                        <span class="card-title w3-text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus reiciendis commodi laboriosam qui ad.</span>
+                        <div class="display-flex w3-text-grey">
+                            <div>
+                                <span>by Ivan Mehta</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-clock-o card-icon"></i>
+                                <span>1 hour ago</span>
+                            </div>
+                            <div class="hide-md">
+                                <i class="fa fa-share card-icon"></i>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img w3-display-container">
+                    <div class="display-bottom w3-padding">
+                        <span class="card-title w3-text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus reiciendis commodi laboriosam qui ad.</span>
+                        <div class="display-flex w3-text-grey">
+                            <div>
+                                <span>by Ivan Mehta</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-clock-o card-icon"></i>
+                                <span>1 hour ago</span>
+                            </div>
+                            <div class="hide-md">
+                                <i class="fa fa-share card-icon"></i>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="funding">
+            <div>
+                <h1>Latest funding rounds on Index.co</h1>
+                <ul>
+                    <li><a href="#">See more</a></li>
+                    <li><a href="#">Get updates by email</a></li>
+                    <li><a href="#">Add info</a></li>
+                </ul>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <div>
+                        <div class="float-left">
+                            <img class="fund-icon" src="https://wr.perma-archives.org/public/m5zv-q2d6/20210126152646im_/https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1198933202947203078%2FyGxNiAdA.png&signature=d0c4ef35a8e410806bed50513f59f79b
+                            " alt="">
+                        </div>
+
+                        <div>
+                            <div class="w3-orange">
+                                <h2 class="target">Ringover</h2>
+                            </div>
+                            <div class="w3-blue">
+                                <div class="pad-left">
+                                    <h2 class="target">$12M</h2>
+                                    <span>SERIES A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-border-bottom">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-tag"></i>
+                                    <span>Telecommunications</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-suitcase"></i>
+                                    <span>Expedition</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="float-left">
+                            <img class="fund-icon" src="https://wr.perma-archives.org/public/m5zv-q2d6/20210126152646im_/https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1198933202947203078%2FyGxNiAdA.png&signature=d0c4ef35a8e410806bed50513f59f79b
+                            " alt="">
+                        </div>
+
+                        <div>
+                            <div class="w3-orange">
+                                <h2 class="target">Ringover</h2>
+                            </div>
+                            <div class="w3-blue">
+                                <div class="pad-left">
+                                    <h2 class="target">$12M</h2>
+                                    <span>SERIES A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-border-bottom">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-tag"></i>
+                                    <span>Telecommunications</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-suitcase"></i>
+                                    <span>Expedition</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="float-left">
+                            <img class="fund-icon" src="https://wr.perma-archives.org/public/m5zv-q2d6/20210126152646im_/https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1198933202947203078%2FyGxNiAdA.png&signature=d0c4ef35a8e410806bed50513f59f79b
+                            " alt="">
+                        </div>
+
+                        <div>
+                            <div class="w3-orange">
+                                <h2 class="target">Ringover</h2>
+                            </div>
+                            <div class="w3-blue">
+                                <div class="pad-left">
+                                    <h2 class="target">$12M</h2>
+                                    <span>SERIES A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-border-bottom">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-tag"></i>
+                                    <span>Telecommunications</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-suitcase"></i>
+                                    <span>Expedition</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="float-left">
+                            <img class="fund-icon" src="https://wr.perma-archives.org/public/m5zv-q2d6/20210126152646im_/https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1198933202947203078%2FyGxNiAdA.png&signature=d0c4ef35a8e410806bed50513f59f79b
+                            " alt="">
+                        </div>
+
+                        <div>
+                            <div class="w3-orange">
+                                <h2 class="target">Ringover</h2>
+                            </div>
+                            <div class="w3-blue">
+                                <div class="pad-left">
+                                    <h2 class="target">$12M</h2>
+                                    <span>SERIES A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-border-bottom">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-tag"></i>
+                                    <span>Telecommunications</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-suitcase"></i>
+                                    <span>Expedition</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
+        <div class="footer-links">
+            <div class="footer-social">
+                <ul>
+                    <li><i class="social fa fa-facebook"></i></li>
+                    <li><i class="social fa fa-twitter"></i></li>
+                    <li><i class="social fa fa-youtube"></i></li>
+                    <li><i class="social fa fa-instagram"></i></li>
+                    <li><i class="social fa fa-pinterest"></i></li>
+                    <li><i class="social fa fa-rss"></i></li>
+                    <li><i class="social fa fa-envelope"></i></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <a href="#">events</a>
+                <a href="#">about</a>
+                <a href="#">advertise</a>
+                <a href="#">jobs</a>
+                <a href="#">contacts</a>
+            </div>
+        </div>
+
+        <div class="footer-about">
+            <span>
+                <a href="#">
+                    <img class="footer-logo" alt="The Next Web" class="footer-legal-logoTNW"
+                        src="https://wr.perma-archives.org/public/m5zv-q2d6/20210126152646im_/https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"></a>
+                ©2006–2021 The Next Web B.V.</span>
+            <span>Made with &lt3 in Amsterdam.</span>
+            <span>Powered by <a href="#" target="_blank" rel="noopener"><img alt="StackPath"
+                        src="https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647im_/https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"></a>
+        </div>
+    </footer>
+    <!-- <footer>
         <div class="footer-top">
             <ul class="social display-flex">
-                <li><i class="fa fa-facebook icon-f"></i></li>
-                <li><i class="fa fa-twitter icon-f"></i></li>
-                <li><i class="fa fa-youtube icon-f"></i></li>
-                <li><i class="fa fa-instagram icon-f"></i></li>
-                <li><i class="fa fa-pinterest icon-f"></i></li>
-                <li><i class="fa fa-rss icon-f"></i></li>
+                <li><i class="fa fa-facebook icon-f fa-lg"></i></li>
+                <li><i class="fa fa-twitter icon-f fa-lg"></i></li>
+                <li><i class="fa fa-youtube icon-f fa-lg"></i></li>
+                <li><i class="fa fa-instagram icon-f fa-lg"></i></li>
+                <li><i class="fa fa-pinterest icon-f fa-lg"></i></li>
+                <li><i class="fa fa-rss icon-f fa-lg"></i></li>
             </ul>
 
-            <ul class="footer-links display-flex">
+            <ul class="footer-links  display-flex">
                 <li class="link-f">
                     <a href="#">Lorem</a>
                 </li>
@@ -86,11 +362,12 @@
 
         <div class="footer-bottom">
             <div class="footer-wrapper">
-                <span><img class="footer-logo" src="style/logo.svg" alt=""> &copy; 2001-2006 The Next Web B.V.</span><span> Made with 3 in
-                    Amsterdam.</span><span>Powered by <strong>STACKPATH</strong></span>
+                <span><img class="footer-logo" src="style/logo.svg" alt=""> &copy; 2001-2006 The Next Web B.V.</span>
+                <span> Made with 3 in Amsterdam.</span>
+                <span>Powered by <strong>STACKPATH</strong></span>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
