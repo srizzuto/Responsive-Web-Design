@@ -17,6 +17,26 @@ ul {
   margin: 0;
 }
 
+section {
+  padding: 8px 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+footer > div > ul > li {
+  padding: 5px;
+}
+
+.news-box > li {
+  list-style-position: inside;
+  list-style-type: circle;
+  height: 32px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
 .nav-links li i {
   padding: 0 16px;
 }
@@ -57,6 +77,10 @@ ul {
   column-gap: 16px;
 }
 
+h4 {
+  margin: 0;
+}
+
 /* WRAPPERS */
 
 .wrapper-flex {
@@ -74,7 +98,7 @@ ul {
   padding: 16px;
 }
 
-.hamburger>div {
+.hamburger > div {
   width: 20px;
   height: 2px;
   background-color: red;
@@ -145,6 +169,7 @@ ul {
 .list-item {
   display: flex;
   flex-direction: row;
+  padding: 8px;
 }
 
 .col-20x60x20 {
@@ -271,11 +296,6 @@ ul {
   text-align: center;
 }
 
-li {
-  list-style: none;
-  margin: 0;
-}
-
 .border-bottom {
   border-bottom: 1px solid #ccc;
 }
@@ -310,11 +330,17 @@ iframe {
   height: 315px;
 }
 
+.title {
+  color: #ff4322;
+  margin: 10px 14px 10px;
+}
+
 .card-title {
+  margin-block-start: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 35px;
   margin-bottom: 5px;
+  font-family: 'Lexend', sans-serif;
 }
 
 .card-title2 {
@@ -322,6 +348,27 @@ iframe {
   font-size: 20px;
   line-height: 16px;
   margin-bottom: 5px;
+}
+
+.card-title3 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-title4 {
+  font: 13px 'Lexend', sans-serif;
+  color: #fff;
+}
+
+.card-title5 {
+  font: 13px 'Lexend', sans-serif;
+  color: #ff4322;
+}
+
+.author {
+  font-size: 12px;
+  color: #aaa;
 }
 
 .card-icon {
@@ -365,7 +412,7 @@ a {
   text-decoration: none;
 }
 
-.footer-info>a {
+.footer-info > a {
   color: #aaa;
   margin: 0 2px;
 }
@@ -421,10 +468,6 @@ footer h3 {
   font-weight: 700;
 }
 
-footer>div>ul>li {
-  padding: 5px;
-}
-
 .header-links {
   color: rgb(114, 114, 114);
   font-family: Shentox, sans-serif;
@@ -437,7 +480,8 @@ footer>div>ul>li {
   white-space: nowrap;
 }
 
-.space li, .post-header * {
+.space li,
+.post-header * {
   padding: 0 16px;
 }
 
@@ -457,7 +501,7 @@ footer>div>ul>li {
   justify-content: center;
 }
 
-.footer-social>ul {
+.footer-social > ul {
   display: flex;
   flex-wrap: wrap;
   padding-inline-start: 0;
@@ -467,7 +511,7 @@ footer>div>ul>li {
   justify-content: center;
 }
 
-.footer-social>ul>li {
+.footer-social > ul > li {
   margin: 3px;
 }
 
@@ -507,7 +551,7 @@ footer>div>ul>li {
   display: inline-block;
 }
 
-.footer-about>span>a>img {
+.footer-about > span > a > img {
   height: 9px;
 }
 
@@ -553,7 +597,7 @@ footer>div>ul>li {
   overflow: hidden;
 }
 
-.pad-left>h4 {
+.pad-left > h4 {
   margin: 0;
   margin-block-end: 0;
   margin-block-start: 0;
@@ -577,12 +621,15 @@ footer>div>ul>li {
 }
 
 .strike {
+  font-size: 12px;
+  color: #aaa;
   text-decoration: line-through;
   display: inline;
 }
 
 .new-price {
-  font-size: 20px;
+  font-size: 14px;
+  color: #555;
   display: inline;
 }
 
@@ -610,11 +657,11 @@ footer>div>ul>li {
   margin-bottom: 24px;
 }
 
-.header-container>h1 {
+.header-container > h1 {
   font: bold 28px 'Yanone Kaffeesatz', sans-serif;
 }
 
-.header-container>ul>li {
+.header-container > ul > li {
   margin-top: 11px;
 }
 
@@ -625,7 +672,7 @@ footer>div>ul>li {
   color: rgb(141, 141, 141);
 }
 
-.bottom-caption>a>span {
+.bottom-caption > a > span {
   color: rgb(190, 190, 190);
   font: 12px 'Lexend', sans-serif;
 }
@@ -640,6 +687,7 @@ footer>div>ul>li {
 }
 
 .font-def {
+  color: #ff4322;
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 15px;
@@ -658,11 +706,29 @@ footer>div>ul>li {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 1px;
 }
 
 .img-latest-fork {
   height: 96px;
   width: 96px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1280px-20th_Anniversary_Schwab_Foundation_Gala_Dinner_44887783681-e1611132397581.jpg");
+}
+
+.img-latest-deals {
+  margin-right: 10px;
+  box-sizing: border-box;
+  height: 75px;
+  width: 82px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
 }
 
 .img-fork-main {
@@ -670,8 +736,12 @@ footer>div>ul>li {
 }
 
 .img-li {
+  position: relative;
   height: 75px;
   width: 75px;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .deals-container {
@@ -679,6 +749,28 @@ footer>div>ul>li {
   justify-content: space-between;
 }
 
+.news-box > li::marker {
+  color: #ff4322;
+  margin: 0;
+}
+
+.news-box > li > h4 {
+  padding: 6px 0 6px 14px;
+  font-size: 13px;
+  color: #555;
+}
+
+.latest-deals {
+  margin-top: 40px;
+}
+
+.latest-deals > div > h2 {
+  margin-block-start: 0;
+}
+
+.latest-deals > div > span {
+  color: #ff4322;
+}
 /*  ***********************
         MEDIA QUERIES
     *********************** */
@@ -697,58 +789,73 @@ footer>div>ul>li {
   .grid-md {
     display: grid;
   }
+
   .font-def {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 15px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
   .bg-container {
     height: 315px;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
+
   .separator {
     display: inline;
     padding: 0 3px;
   }
+
   .flex-md {
     display: flex;
   }
+
   .col-30x70 {
     grid-template-columns: 70% 30%;
   }
+
   .col-70x30-md {
     grid-template-columns: 70% 30%;
   }
+
   .col-2-md {
     grid-template-columns: auto auto;
     column-gap: 16px;
     row-gap: 16px;
   }
+
   .col-3-md {
     grid-template-columns: auto auto auto;
     column-gap: 16px;
     row-gap: 16px;
   }
+
   .show-md {
     display: block;
   }
+
   .hide-md {
     display: none;
   }
+
   .header-clearance {
     margin-top: 112px;
   }
+
   .standalone {
     margin: 0;
     height: 378px;
   }
+
   .card-title {
+    margin-block-start: 0;
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 15px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
   .card-title2 {
     font-weight: 700;
     font-size: 20px;
@@ -761,36 +868,45 @@ footer>div>ul>li {
   .col-fund-list {
     grid-template-columns: 70% 30%;
   }
+
   .show-lg {
     display: block;
   }
+
   .col-3-lg {
     grid-template-columns: auto auto auto;
   }
+
   .col-4-lg {
     grid-template-columns: auto auto auto auto;
     column-gap: 16px;
   }
+
   .col-70x30-lg {
     grid-template-columns: 70% 30%;
   }
+
   .bg-img {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
+
   .bg-container {
     height: 315px;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
+
   .card-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
   }
+
   .card-title2 {
     font-weight: 700;
     line-height: 25px;
     font-size: 28px;
   }
+
   .main-article-date {
     color: white;
   }
