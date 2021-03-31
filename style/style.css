@@ -659,6 +659,11 @@ footer > div > ul > li {
   width: 75px;
 }
 
+.deals-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*  ***********************
         MEDIA QUERIES
     *********************** */
