@@ -653,10 +653,15 @@ footer > div > ul > li {
 .img-fork-main {
   width: 100%;
 }
+
+.img-li {
+  height: 75px;
+  width: 75px;
+}
+
 /*  ***********************
         MEDIA QUERIES
     *********************** */
-
 @media only screen and (min-width: 768px) {
   .font-def {
     font-weight: 700;
