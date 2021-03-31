@@ -34,6 +34,11 @@ ul {
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
 }
 
+.bg-container {
+  height: 315px;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+}
+
 .display-bottom {
   position: absolute;
   left: 0;
@@ -44,8 +49,11 @@ ul {
   width: 80%;
 }
 
-.gap-lg {
-  column-gap: 32px;
+.gap-row-lg {
+  row-gap: 32px;
+}
+.gap-column-md {
+  column-gap: 16px;
 }
 
 /* WRAPPERS */
@@ -657,6 +665,11 @@ footer > div > ul > li {
     font-family: 'Hammersmith One', sans-serif;
   }
 
+  .bg-container {
+    height: 315px;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+  }
+
   .separator {
     display: inline;
     padding: 0 3px;
@@ -672,6 +685,12 @@ footer > div > ul > li {
 
   .col-70x30-md {
     grid-template-columns: 70% 30%;
+  }
+
+  .col-2-md {
+    grid-template-columns: auto auto;
+    column-gap: 16px;
+    row-gap: 16px;
   }
 
   .col-3-md {
@@ -721,6 +740,10 @@ footer > div > ul > li {
     display: block;
   }
 
+  .col-3-lg {
+    grid-template-columns: auto auto auto;
+  }
+
   .col-4-lg {
     grid-template-columns: auto auto auto auto;
     column-gap: 16px;
@@ -731,6 +754,11 @@ footer > div > ul > li {
   }
 
   .bg-img {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+  }
+
+  .bg-container {
+    height: 315px;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
 
