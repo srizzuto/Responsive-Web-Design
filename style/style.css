@@ -31,7 +31,7 @@ li {
   margin: 0;
 }
 
-footer>div>ul>li {
+footer > div > ul > li {
   padding: 5px;
 }
 
@@ -50,8 +50,7 @@ footer>div>ul>li {
   fill: #fff;
 }
 
-.news-box>li {
-  /* list-style-position: inside; */
+.news-box > li {
   padding: 12px 0;
   list-style-type: circle;
   border-bottom: 1px solid rgb(238, 238, 238);
@@ -118,7 +117,7 @@ h4 {
   padding: 16px;
 }
 
-.hamburger>div {
+.hamburger > div {
   width: 20px;
   height: 2px;
   background-color: red;
@@ -433,7 +432,7 @@ a {
   text-decoration: none;
 }
 
-.footer-info>a {
+.footer-info > a {
   color: #aaa;
   margin: 0 2px;
 }
@@ -501,7 +500,8 @@ footer h3 {
   white-space: nowrap;
 }
 
-.space li, .post-header * {
+.space li,
+.post-header * {
   padding: 0 16px;
 }
 
@@ -521,7 +521,7 @@ footer h3 {
   justify-content: center;
 }
 
-.footer-social>ul {
+.footer-social > ul {
   display: flex;
   flex-wrap: wrap;
   padding-inline-start: 0;
@@ -531,7 +531,7 @@ footer h3 {
   justify-content: center;
 }
 
-.footer-social>ul>li {
+.footer-social > ul > li {
   margin: 3px;
 }
 
@@ -571,7 +571,7 @@ footer h3 {
   display: inline-block;
 }
 
-.footer-about>span>a>img {
+.footer-about > span > a > img {
   height: 9px;
 }
 
@@ -617,7 +617,7 @@ footer h3 {
   overflow: hidden;
 }
 
-.pad-left>h4 {
+.pad-left > h4 {
   margin: 0;
   margin-block-end: 0;
   margin-block-start: 0;
@@ -677,11 +677,11 @@ footer h3 {
   margin-bottom: 24px;
 }
 
-.header-container>h1 {
+.header-container > h1 {
   font: bold 28px 'Yanone Kaffeesatz', sans-serif;
 }
 
-.header-container>ul>li {
+.header-container > ul > li {
   margin-top: 11px;
 }
 
@@ -692,7 +692,7 @@ footer h3 {
   color: rgb(141, 141, 141);
 }
 
-.bottom-caption>a>span {
+.bottom-caption > a > span {
   color: rgb(190, 190, 190);
   font: 12px 'Lexend', sans-serif;
 }
@@ -773,12 +773,12 @@ footer h3 {
   padding-left: 18px;
 }
 
-.news-box>li::marker {
+.news-box > li::marker {
   color: #ff4322;
   margin: 0;
 }
 
-.news-box>li>h4 {
+.news-box > li > h4 {
   font-size: 13px;
   color: #555;
 }
@@ -787,11 +787,11 @@ footer h3 {
   margin-top: 40px;
 }
 
-.latest-deals>div>h2 {
+.latest-deals > div > h2 {
   margin-block-start: 0;
 }
 
-.latest-deals>div>span {
+.latest-deals > div > span {
   color: #ff4322;
 }
 
@@ -804,55 +804,70 @@ footer h3 {
     display: flex;
     flex-direction: column;
   }
+
   .img-li {
     height: 100%;
     width: 100%;
   }
+
   .grid-md {
     display: grid;
   }
+
   .font-def {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 15px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
   .bg-container {
     height: 315px;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
+
   .separator {
     display: inline;
     padding: 0 3px;
   }
+
   .flex-md {
     display: flex;
   }
+
   .col-30x70 {
     grid-template-columns: 70% 30%;
   }
+
   .col-70x30-md {
     grid-template-columns: 70% 30%;
   }
+
   .col-2-md {
     grid-template-columns: auto auto;
   }
+
   .col-3-md {
     grid-template-columns: auto auto auto;
   }
+
   .show-md {
     display: block;
   }
+
   .hide-md {
     display: none;
   }
+
   .header-clearance {
     margin-top: 112px;
   }
+
   .standalone {
     margin: 0;
     height: 378px;
   }
+
   .card-title {
     margin-block-start: 0;
     font-weight: 700;
@@ -860,12 +875,14 @@ footer h3 {
     margin-bottom: 15px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
   .card-title2 {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 7px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
   .img-latest-deals {
     box-sizing: border-box;
     height: 201px;
@@ -876,29 +893,34 @@ footer h3 {
     background-position: 50%;
     background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
   }
+
   .overflow-hidden {
     overflow: hidden;
   }
+
   .clip-bg {
     height: 200px;
     width: 200px;
-    background-color: yellow;
+    background-color: #fd3;
     -webkit-clip-path: polygon(56% 0, 100% 45%, 100% 0);
     clip-path: polygon(56% 0, 100% 45%, 100% 0);
   }
+
   .transform {
     height: 200px;
     width: 200px;
     position: absolute;
     -ms-transform: rotate(45deg);
-    /* IE 9 */
     transform: rotate(45deg);
+    font-weight: bold;
   }
+
   .container2 {
     margin: 0 auto;
     max-width: 1024px;
     padding: 0 20px;
   }
+
   body {
     width: 100%;
   }
@@ -908,38 +930,48 @@ footer h3 {
   .col-fund-list {
     grid-template-columns: 70% 30%;
   }
+
   .show-lg {
     display: block;
   }
+
   .col-3-lg {
     grid-template-columns: auto auto auto;
   }
+
   .col-4-lg {
     grid-template-columns: auto auto auto auto;
   }
+
   .col-70x30-lg {
     grid-template-columns: 70% 30%;
   }
+
   .bg-img {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
+
   .bg-container {
     height: 315px;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
+
   .card-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
   }
+
   .card-title2 {
     font-weight: 700;
     line-height: 25px;
     font-size: 28px;
   }
+
   .main-article-date {
     color: white;
   }
+
   .img-latest-deals {
     margin-right: 10px;
     box-sizing: border-box;
@@ -951,29 +983,35 @@ footer h3 {
     background-position: 50%;
     background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
   }
+
   .latest-deals {
     box-sizing: border-box;
     position: relative;
     margin: 0 300px 0 20px;
   }
+
   .col-4-lg2 {
     grid-template-columns: 294px 294px 294px 294px;
     column-gap: 0;
     row-gap: 0;
   }
+
   .container2 {
     margin: 0 auto;
     max-width: 1192px;
     padding: 0 20px;
   }
+
   body {
     width: 100%;
   }
+
   .svg {
     position: fixed;
     bottom: 20px;
     right: 20px;
   }
+
   .svg svg {
     width: 45px;
     height: 45px;
