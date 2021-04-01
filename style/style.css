@@ -5,6 +5,7 @@ html {
 }
 
 a {
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -440,10 +441,6 @@ aside {
 
 .display-abs {
   position: inherit;
-}
-
-a {
-  text-decoration: none;
 }
 
 .footer-info > a {
