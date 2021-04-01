@@ -4,6 +4,24 @@ html {
   font-family: ARS Maquette, "Helvetica Neue", Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.category-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -15,6 +33,40 @@ header {
 ul {
   padding: 0;
   margin: 0;
+}
+
+section {
+  padding: 8px 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+footer > div > ul > li {
+  padding: 5px;
+}
+
+.svg {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+
+.svg svg {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: blue;
+  padding: 3px;
+  fill: #fff;
+}
+
+.news-box > li {
+  padding: 12px 0;
+  list-style-type: circle;
+  border-bottom: 1px solid rgb(238, 238, 238);
 }
 
 .nav-links li i {
@@ -34,6 +86,13 @@ ul {
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
 }
 
+.bg-container {
+  height: 315px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+}
+
 .display-bottom {
   position: absolute;
   left: 0;
@@ -44,8 +103,16 @@ ul {
   width: 80%;
 }
 
-.gap-lg {
-  column-gap: 32px;
+.gap-row-lg {
+  row-gap: 32px;
+}
+
+.gap-column-md {
+  column-gap: 16px;
+}
+
+h4 {
+  margin: 0;
 }
 
 /* WRAPPERS */
@@ -125,8 +192,19 @@ ul {
   row-gap: 16px;
 }
 
-.flex-dir-row {
+.flex-row {
   flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  overflow: hidden;
 }
 
 .col-20x60x20 {
@@ -253,11 +331,6 @@ ul {
   text-align: center;
 }
 
-li {
-  list-style: none;
-  margin: 0;
-}
-
 .border-bottom {
   border-bottom: 1px solid #ccc;
 }
@@ -278,10 +351,6 @@ li {
   font-style: italic;
 }
 
-.container {
-  padding: 0 32px;
-}
-
 .content {
   max-width: 900px;
   margin: 0 auto;
@@ -296,11 +365,17 @@ iframe {
   height: 315px;
 }
 
+.title {
+  color: #ff4322;
+  margin: 10px 14px 10px;
+}
+
 .card-title {
+  margin-block-start: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 35px;
   margin-bottom: 5px;
+  font-family: 'Lexend', sans-serif;
 }
 
 .card-title2 {
@@ -308,6 +383,27 @@ iframe {
   font-size: 20px;
   line-height: 16px;
   margin-bottom: 5px;
+}
+
+.card-title3 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-title4 {
+  font: 13px 'Lexend', sans-serif;
+  color: #fff;
+}
+
+.card-title5 {
+  font: 13px 'Lexend', sans-serif;
+  color: #ff4322;
+}
+
+.author {
+  font-size: 12px;
+  color: #aaa;
 }
 
 .card-icon {
@@ -345,10 +441,6 @@ aside {
 
 .display-abs {
   position: inherit;
-}
-
-a {
-  text-decoration: none;
 }
 
 .footer-info > a {
@@ -407,10 +499,6 @@ footer h3 {
   font-weight: 700;
 }
 
-footer > div > ul > li {
-  padding: 5px;
-}
-
 .header-links {
   color: rgb(114, 114, 114);
   font-family: Shentox, sans-serif;
@@ -437,7 +525,7 @@ footer > div > ul > li {
   height: 161px;
   padding: 40px 0;
   background-color: #131313;
-  margin: auto;
+  margin: 70px auto auto auto;
   border-bottom: 1px solid #333;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -563,6 +651,19 @@ footer > div > ul > li {
   display: none;
 }
 
+.strike {
+  font-size: 12px;
+  color: #aaa;
+  text-decoration: line-through;
+  display: inline;
+}
+
+.new-price {
+  font-size: 14px;
+  color: #555;
+  display: inline;
+}
+
 .ringover {
   background-color: #ff4322;
   color: #fff;
@@ -617,26 +718,127 @@ footer > div > ul > li {
 }
 
 .font-def {
+  color: #ff4322;
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 15px;
   font-family: 'Hammersmith One', sans-serif;
 }
 
-.funding {
+.container {
   padding: 0 16px;
+}
+
+.hard-fork {
+  display: block;
+}
+
+.latest-fork {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(255, 235, 231);
+}
+
+.img-latest-fork {
+  height: 96px;
+  width: 96px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1280px-20th_Anniversary_Schwab_Foundation_Gala_Dinner_44887783681-e1611132397581.jpg");
+}
+
+.img-latest-deals {
+  margin-right: 10px;
+  box-sizing: border-box;
+  height: 75px;
+  width: 82px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
+}
+
+.img-fork-main {
+  width: 100%;
+}
+
+.img-li {
+  position: relative;
+  height: 75px;
+  width: 75px;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.deals-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-box {
+  padding-left: 18px;
+}
+
+.news-box > li::marker {
+  color: #ff4322;
+  margin: 0;
+}
+
+.news-box > li > h4 {
+  font-size: 13px;
+  color: #555;
+}
+
+.latest-deals {
+  margin-top: 40px;
+}
+
+.latest-deals > div > h2 {
+  margin-block-start: 0;
+}
+
+.latest-deals > div > span {
+  color: #ff4322;
+}
+
+.justify-start-sm {
+  justify-content: start;
 }
 
 /*  ***********************
         MEDIA QUERIES
     *********************** */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  .list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-li {
+    height: 100%;
+    width: 100%;
+  }
+
+  .grid-md {
+    display: grid;
+  }
+
   .font-def {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 15px;
     font-family: 'Hammersmith One', sans-serif;
+  }
+
+  .bg-container {
+    height: 315px;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
 
   .separator {
@@ -656,10 +858,12 @@ footer > div > ul > li {
     grid-template-columns: 70% 30%;
   }
 
+  .col-2-md {
+    grid-template-columns: auto auto;
+  }
+
   .col-3-md {
     grid-template-columns: auto auto auto;
-    column-gap: 16px;
-    row-gap: 16px;
   }
 
   .show-md {
@@ -680,6 +884,7 @@ footer > div > ul > li {
   }
 
   .card-title {
+    margin-block-start: 0;
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 15px;
@@ -692,9 +897,51 @@ footer > div > ul > li {
     margin-bottom: 7px;
     font-family: 'Hammersmith One', sans-serif;
   }
+
+  .img-latest-deals {
+    box-sizing: border-box;
+    height: 201px;
+    width: 100%;
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .clip-bg {
+    height: 200px;
+    width: 200px;
+    background-color: #fd3;
+    -webkit-clip-path: polygon(56% 0, 100% 45%, 100% 0);
+    clip-path: polygon(56% 0, 100% 45%, 100% 0);
+  }
+
+  .transform {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-weight: bold;
+  }
+
+  .container2 {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 20px;
+  }
+
+  body {
+    width: 100%;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .col-fund-list {
     grid-template-columns: 70% 30%;
   }
@@ -703,9 +950,12 @@ footer > div > ul > li {
     display: block;
   }
 
+  .col-3-lg {
+    grid-template-columns: auto auto auto;
+  }
+
   .col-4-lg {
     grid-template-columns: auto auto auto auto;
-    column-gap: 16px;
   }
 
   .col-70x30-lg {
@@ -713,6 +963,11 @@ footer > div > ul > li {
   }
 
   .bg-img {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+  }
+
+  .bg-container {
+    height: 315px;
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
   }
 
@@ -730,5 +985,59 @@ footer > div > ul > li {
 
   .main-article-date {
     color: white;
+  }
+
+  .img-latest-deals {
+    margin-right: 10px;
+    box-sizing: border-box;
+    height: 201px;
+    width: 270px;
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
+  }
+
+  .latest-deals {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 300px 0 20px;
+  }
+
+  .col-4-lg2 {
+    grid-template-columns: 294px 294px 294px 294px;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .container2 {
+    margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .svg {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .svg svg {
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 3px;
+    fill: #fff;
+  }
+
+  .justify-end-lg {
+    justify-content: flex-end;
   }
 }
