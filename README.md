@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Responsive-Web-Designg
+# Responsive-Web-Design
 
 > Project #2 of Microverse where I'll replicate a website making it responsive through different screen sizes
 
