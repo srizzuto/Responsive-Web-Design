@@ -4,6 +4,10 @@ html {
   font-family: ARS Maquette, "Helvetica Neue", Arial, sans-serif;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   width: 100%;
   box-sizing: border-box;
@@ -795,6 +799,10 @@ footer h3 {
   color: #ff4322;
 }
 
+.justify-start-sm {
+  justify-content: start;
+}
+
 /*  ***********************
         MEDIA QUERIES
     *********************** */
@@ -1020,5 +1028,9 @@ footer h3 {
     border-radius: 50%;
     padding: 3px;
     fill: #fff;
+  }
+
+  .justify-end-lg {
+    justify-content: flex-end;
   }
 }
