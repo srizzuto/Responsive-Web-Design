@@ -1,0 +1,91 @@
+@white: #fff;
+@black: #000;
+@blue: blue;
+@yellow: yellow;
+@grey: #555;
+@darkGrey: #333;
+@lightGrey: #aaa;
+@red: #ff4322;
+@transRed: rgb(255, 235, 231);
+
+@width100: 100%;
+@displayNone: none;
+@displayBlock: block;
+
+// displays
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.hide-sm {
+  display: @displayNone;
+}
+
+.show-md {
+  display: @displayNone;
+}
+
+.show-lg {
+  display: @displayNone;
+}
+
+
+// columns
+.col-1{grid-column: 1;}
+.col-2{grid-column: 1 span 2;}
+.col-3{grid-column: 1 span 3;}
+.col-4{grid-column: 1 span 4;}
+.col-5{grid-column: 1 span 5;}
+.col-6{grid-column: 1 span 6;}
+.col-7{grid-column: 1 span 7;}
+.col-8{grid-column: 1 span 8;}
+.col-9{grid-column: 1 span 9;}
+.col-10{grid-column: 1 span 10;}
+.col-11{grid-column: 1 span 11;}
+.col-12{grid-column: 1 span 12;}
+
+
+
+body {
+  font-family: ARS Maquette, "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  .header-item {
+    height: 48px;
+    display: block;
+  }
+
+  .header-links {
+    color: @grey;
+    font-family: Shentox, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .post-header {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .post-header * {
+    padding: 0 16px;
+  }
+}
+
+nav {
+  .nav-links li i {
+    padding: 0 16px;
+  }
+}

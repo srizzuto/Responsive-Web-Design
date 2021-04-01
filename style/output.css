@@ -1,0 +1,30 @@
+body {
+  font-family: ARS Maquette, "Helvetica Neue", Arial, sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+header .header-item {
+  height: 48px;
+  display: block;
+}
+header .header-links {
+  color: #555;
+  font-family: Shentox, sans-serif;
+  text-transform: uppercase;
+}
+header .post-header {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+header .post-header * {
+  padding: 0 16px;
+}
+nav .nav-links li i {
+  padding: 0 16px;
+}
