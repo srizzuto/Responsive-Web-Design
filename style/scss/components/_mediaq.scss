@@ -1,0 +1,225 @@
+
+@media only screen and (min-width: 769px) {
+    .list-item {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .img-li {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .grid-md {
+      display: grid;
+    }
+  
+    .font-def {
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 15px;
+      font-family: 'Hammersmith One', sans-serif;
+    }
+  
+    .bg-container {
+      height: 315px;
+      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+    }
+  
+    .separator {
+      display: inline;
+      padding: 0 3px;
+    }
+  
+    .flex-md {
+      display: flex;
+    }
+  
+    .col-30x70 {
+      grid-template-columns: 70% 30%;
+    }
+  
+    .col-70x30-md {
+      grid-template-columns: 70% 30%;
+    }
+  
+    .col-2-md {
+      grid-template-columns: auto auto;
+    }
+  
+    .col-3-md {
+      grid-template-columns: auto auto auto;
+    }
+  
+    .show-md {
+      display: block;
+    }
+  
+    .hide-md {
+      display: none;
+    }
+  
+    .header-clearance {
+      margin-top: 112px;
+    }
+  
+    .standalone {
+      margin: 0;
+      height: 378px;
+    }
+  
+    .card-title {
+      margin-block-start: 0;
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 15px;
+      font-family: 'Hammersmith One', sans-serif;
+    }
+  
+    .card-title2 {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 7px;
+      font-family: 'Hammersmith One', sans-serif;
+    }
+  
+    .img-latest-deals {
+      box-sizing: border-box;
+      height: 201px;
+      width: 100%;
+      border-bottom: 1px solid #555;
+      border-right: 1px solid #555;
+      background-size: cover;
+      background-position: 50%;
+      background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
+    }
+  
+    .overflow-hidden {
+      overflow: hidden;
+    }
+  
+    .clip-bg {
+      height: 200px;
+      width: 200px;
+      background-color: #fd3;
+      -webkit-clip-path: polygon(56% 0, 100% 45%, 100% 0);
+      clip-path: polygon(56% 0, 100% 45%, 100% 0);
+    }
+  
+    .transform {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      font-weight: bold;
+    }
+  
+    .container2 {
+      margin: 0 auto;
+      max-width: 1024px;
+      padding: 0 20px;
+    }
+  
+    body {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    .col-fund-list {
+      grid-template-columns: 70% 30%;
+    }
+  
+    .show-lg {
+      display: block;
+    }
+  
+    .col-3-lg {
+      grid-template-columns: auto auto auto;
+    }
+  
+    .col-4-lg {
+      grid-template-columns: auto auto auto auto;
+    }
+  
+    .col-70x30-lg {
+      grid-template-columns: 70% 30%;
+    }
+  
+    .bg-img {
+      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+    }
+  
+    .bg-container {
+      height: 315px;
+      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+    }
+  
+    .card-title {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 60px;
+    }
+  
+    .card-title2 {
+      font-weight: 700;
+      line-height: 25px;
+      font-size: 28px;
+    }
+  
+    .main-article-date {
+      color: white;
+    }
+  
+    .img-latest-deals {
+      margin-right: 10px;
+      box-sizing: border-box;
+      height: 201px;
+      width: 270px;
+      border-bottom: 1px solid #555;
+      border-right: 1px solid #555;
+      background-size: cover;
+      background-position: 50%;
+      background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
+    }
+  
+    .latest-deals {
+      box-sizing: border-box;
+      position: relative;
+      margin: 0 300px 0 20px;
+    }
+  
+    .col-4-lg2 {
+      grid-template-columns: 294px 294px 294px 294px;
+      column-gap: 0;
+      row-gap: 0;
+    }
+  
+    .container2 {
+      margin: 0 auto;
+      max-width: 1192px;
+      padding: 0 20px;
+    }
+  
+    body {
+      width: 100%;
+    }
+  
+    .svg {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    .svg svg {
+      width: 45px;
+      height: 45px;
+      color: #fff;
+      background-color: blue;
+      border-radius: 50%;
+      padding: 3px;
+      fill: #fff;
+    }
+  }
+  

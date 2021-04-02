@@ -1,0 +1,99 @@
+
+.footer-info > a {
+  color: #aaa;
+  margin: 0 2px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h3 {
+  line-height: 0;
+}
+
+.footer-links {
+  width: 100%;
+  height: 161px;
+  padding: 40px 0;
+  background-color: #131313;
+  margin: 70px auto auto auto;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-social > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-bottom: 21px;
+  justify-content: center;
+}
+
+.footer-social > ul > li {
+  margin: 3px;
+}
+
+.social {
+  color: #fff;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 0 3px;
+  text-align: center;
+  background-color: #333;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-info {
+  font: 13px 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+.footer-about {
+  width: 100%;
+  text-align: center;
+  height: 122px;
+  padding: 32px 0;
+  font: 13px ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  color: #aaa;
+  justify-content: center;
+  background-color: black;
+}
+
+.footer-about span {
+  display: inline-block;
+}
+
+.footer-about > span > a > img {
+  height: 9px;
+}
+
+.footer-logo {
+  margin-right: 3px;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+
+.icon-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}

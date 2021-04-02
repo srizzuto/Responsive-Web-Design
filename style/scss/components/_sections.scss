@@ -1,0 +1,196 @@
+
+.title {
+  color: #ff4322;
+  margin: 10px 14px 10px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  overflow: hidden;
+}
+  
+.card-item {
+  height: 100px;
+}
+
+.card {
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+.card-title {
+  margin-block-start: 0;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: 'Lexend', sans-serif;
+}
+
+.card-title2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.card-title3 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-title4 {
+  font: 13px 'Lexend', sans-serif;
+  color: #fff;
+}
+
+.card-title5 {
+  font: 13px 'Lexend', sans-serif;
+  color: #ff4322;
+}
+
+.author {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.card-icon {
+  margin-left: 8px;
+}
+
+.strike {
+  font-size: 12px;
+  color: #aaa;
+  text-decoration: line-through;
+  display: inline;
+}
+
+.new-price {
+  font-size: 14px;
+  color: #555;
+  display: inline;
+}
+
+.ringover {
+  background-color: #ff4322;
+  color: #fff;
+  padding: 10px 16px 10px 84px;
+  box-sizing: border-box;
+}
+
+.icon-description {
+  font: 13px 'Lexend', sans-serif;
+}
+
+.bottom-caption {
+  padding: 10px 16px 16px;
+  border-top: 1px solid #ffdfd9;
+  font: bold 12px 'Lexend', sans-serif;
+  color: rgb(141, 141, 141);
+}
+
+.bottom-caption > a > span {
+  color: rgb(190, 190, 190);
+  font: 12px 'Lexend', sans-serif;
+}
+
+.main-article-date {
+  color: white;
+  opacity: 0.8;
+}
+
+
+.hard-fork {
+  display: block;
+}
+
+.latest-fork {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(255, 235, 231);
+}
+
+.img-latest-fork {
+  height: 96px;
+  width: 96px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1280px-20th_Anniversary_Schwab_Foundation_Gala_Dinner_44887783681-e1611132397581.jpg");
+}
+
+.img-latest-deals {
+  margin-right: 10px;
+  box-sizing: border-box;
+  height: 75px;
+  width: 82px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg");
+}
+
+.img-fork-main {
+  width: 100%;
+}
+
+.img-li {
+  position: relative;
+  height: 75px;
+  width: 75px;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.deals-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-box {
+  padding-left: 18px;
+}
+
+.news-box > li::marker {
+  color: #ff4322;
+  margin: 0;
+}
+
+.news-box > li > h4 {
+  font-size: 13px;
+  color: #555;
+}
+
+.latest-deals {
+  margin-top: 40px;
+}
+
+.latest-deals > div > h2 {
+  margin-block-start: 0;
+}
+
+.latest-deals > div > span {
+  color: #ff4322;
+}
+
+.target {
+  margin: 0;
+  font: bold 18px 'Lexend', sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.pad-left > h4 {
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font: 11px 'Inconsolata', monospace;
+  opacity: 0.7;
+}

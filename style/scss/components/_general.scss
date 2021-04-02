@@ -1,0 +1,409 @@
+/* GENERAL SETUP */
+
+html {
+    font-family: ARS Maquette, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  section {
+    padding: 8px 0;
+  }
+  
+  li {
+    list-style: none;
+    margin: 0;
+  }
+  
+  footer > div > ul > li {
+    padding: 5px;
+  }
+  
+  .svg {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+  }
+  
+  .svg svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: blue;
+    padding: 3px;
+    fill: #fff;
+  }
+  
+  .news-box > li {
+    padding: 12px 0;
+    list-style-type: circle;
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+  
+  .nav-links li i {
+    padding: 0 16px;
+  }
+  
+  .header-clearance {
+    margin-top: 80px;
+  }
+  
+  .bg-img {
+    margin: 0 10px 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 184px;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+  }
+  
+  .bg-container {
+    height: 315px;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.48), rgba(0, 0, 0, 1)), url(binoculars-looking-at-ocean.jpg);
+  }
+  
+  .display-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .standalone-logo {
+    width: 80%;
+  }
+  
+  .gap-row-lg {
+    row-gap: 32px;
+  }
+  
+  .gap-column-md {
+    column-gap: 16px;
+  }
+  
+  h4 {
+    margin: 0;
+  }
+
+  .item-height {
+    height: 48px;
+  }
+  
+  .item-32 {
+    height: 32px;
+  }
+  
+  .display-flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .grid-gap {
+    column-gap: 16px;
+  }
+  
+  .color-default {
+    color: #326891;
+  }
+  
+  .grid-row-gap {
+    row-gap: 16px;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .col-20x60x20 {
+    grid-template-columns: 20% 60% 20%;
+  }
+  
+  .col-50x50 {
+    grid-template-columns: 50% 50%;
+  }
+  
+  .col-70x30 {
+    grid-template-columns: 70% 30%;
+  }
+  
+  .col-30x70 {
+    grid-template-columns: 30% 70%;
+  }
+  
+  .col-auto-3x {
+    grid-template-columns: auto auto auto;
+  }
+  
+  .col-auto-4x {
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  .col-auto-6x {
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-no-wrap {
+    flex-wrap: nowrap;
+  }
+  
+  .icon {
+    width: 16px;
+    margin-right: 16px;
+  }
+  
+  .width100 {
+    width: 100%;
+  }
+  
+  .justify-space-around {
+    justify-content: space-around;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .justify-start {
+    justify-content: flex-start;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .flex-align-center {
+    align-items: center;
+  }
+  
+  .light-text {
+    color: #999;
+  }
+  
+  .margin-auto {
+    margin: auto;
+  }
+  
+  .border-top {
+    border-top: 1px solid #000;
+  }
+  
+  .mid-line {
+    display: block;
+    width: 10%;
+    border-top: 1px solid #000;
+  }
+  
+  .margin-y-16 {
+    padding: 50px 0;
+  }
+  
+  .margin-y-md {
+    margin: 16px 0;
+  }
+  
+  .padding-bottom-md {
+    padding-bottom: 16px;
+  }
+  
+  .padding-bottom-lg {
+    padding-bottom: 32px;
+  }
+  
+  .margin-bottom-md {
+    margin-bottom: 16px;
+  }
+  
+  .margin-bottom {
+    margin-bottom: 48px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .border-bottom {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .border-y {
+    border: 1px solid #000;
+  }
+  
+  .padding-y-24 {
+    padding: 24px 0;
+  }
+  
+  .fs-2 {
+    font-size: 2.5rem;
+  }
+  
+  .fs-italic {
+    font-style: italic;
+  }
+  
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .text-content {
+    padding: 0 164px 0 164px;
+  }
+  
+  .float-right {
+    float: right;
+  }
+  
+  .clearance {
+    margin-top: 80px;
+  }
+  
+  aside {
+    width: 200px;
+  }
+  
+  .h60 {
+    height: 90px;
+  }
+  
+  .editor-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .fs-small {
+    font-size: 12px;
+  }
+  
+  .display-relative {
+    position: relative;
+  }
+  
+  .display-abs {
+    position: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .fs-logo {
+    color: #000;
+    font-size: 14.25px;
+  }
+  
+  .caption {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    margin-left: 7px;
+    color: #666;
+  }
+  
+  .text-content p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  
+  .date {
+    font-size: 0.8125rem;
+  }
+  
+  .break p {
+    line-height: 10px;
+  }
+  
+  .text-heading {
+    font-size: 1.25rem;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .current {
+    color: white;
+  }
+  
+  .z999 {
+    z-index: 999;
+  }
+  
+  .float-left {
+    float: left;
+    padding: 16px;
+  }
+  
+  .fund-icon {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .pad-left {
+    line-height: 28px;
+    padding: 10px 16px 10px 84px;
+    background-color: #ffebe7;
+    color: black;
+  }
+  
+  .show-md {
+    display: none;
+  }
+  
+  .hide-sm {
+    display: none;
+  }
+  
+  .grid-container {
+    padding: 0 20px;
+  }
+  
+  .grid-bottom-icons {
+    padding: 16px;
+  }
+  
+  .separator {
+    display: none;
+  }
+  
+  .font-def {
+    color: #ff4322;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Hammersmith One', sans-serif;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }

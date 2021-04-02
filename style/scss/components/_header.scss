@@ -1,0 +1,70 @@
+.hamburger {
+  padding: 16px;
+}
+
+.hamburger > div {
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  margin-top: 3px;
+}
+
+.icon-search {
+  width: 16px;
+  height: 16px;
+  opacity: 0.25;
+  padding: 16px;
+}
+
+.anouncement {
+  font-size: 12px;
+  height: 60px;
+  padding: 0 6px;
+  line-height: 60px;
+  text-align: center;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  background-color: #fd3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+}
+
+.logo {
+  width: 66px;
+}
+
+.header-container {
+  color: #ff4322;
+  margin-bottom: 24px;
+}
+
+.header-container > h1 {
+  font: bold 28px 'Yanone Kaffeesatz', sans-serif;
+}
+
+.header-container > ul > li {
+  margin-top: 11px;
+}
+
+.header-item {
+  height: 48px;
+  display: block;
+}
+
+.header-links {
+  color: rgb(114, 114, 114);
+  font-family: Shentox, sans-serif;
+  text-transform: uppercase;
+}
+
+.post-header {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.space li,
+.post-header * {
+  padding: 0 16px;
+}
