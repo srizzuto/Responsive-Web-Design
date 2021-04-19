@@ -2,20 +2,11 @@
 
 # Responsive-Web-Design
 
-> Project #2 of Microverse where I'll replicate a website making it responsive through different screen sizes
-
-![screenshot](img/readme_ss.png)
-
-Additional description about the project and its features.
+> First Project of the Ruby Module where we sort an array using bubble sort algorithm.
 
 ## Built With
 
-- HTM5 & CSS
-
-## Live Demo
-
-[Live Demo Link](https://srizzuto.github.io/Responsive-Web-Design/.)
-
+- Ruby
 
 ## Authors
 
@@ -25,12 +16,13 @@ Additional description about the project and its features.
 - Twitter: [@sbstnrzzt](https://twitter.com/sbstnrzzt)
 - LinkedIn: [Sebastian Rizzuto](https://www.linkedin.com/in/srizzuto/)
 
-👤 **Mwila Kaunda**
 
+👤 **Safa Aballagh** 
 
-- GitHub: [@Mwila-Kaunda](https://github.com/mwila-kaunda)
-- Twitter: [@MwilaKaunda](https://twitter.com/MwilaKaunda) 
-- LinkedIn: [Mwila Kaunda](https://linkedin.com/Mwilakaunda) 
+- GitHub: [@Safafa](https://github.com/safafa) 
+- Twitter: [@Aballagh_S](https://twitter.com/Aballagh_S) 
+- LinkedIn: [Aballagh Safa](https://www.linkedin.com/in/aballaghsafa/) 
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
